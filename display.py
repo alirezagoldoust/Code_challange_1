@@ -10,11 +10,11 @@ def print_board(dict_1):
     print('| ' + ' | '.join(dict_1[6]) + ' |')
     print('| ' + ' | '.join(dict_1[7]) + ' |')
         
-    def start ():    
-        input("Enter any key to start...")
-        print("start ")
-        player_1 = input("player1: enter your name:")
-        player_2 = input("player2: enter your name:")
+def start ():    
+    input("Enter any key to start...")
+    print("start ")
+    player_1 = input("player1: enter your name:")
+    player_2 = input("player2: enter your name:")
 
 
 
