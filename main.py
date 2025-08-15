@@ -1,4 +1,5 @@
 from display import *
+from update import *
 
 start()
 
@@ -20,29 +21,40 @@ while True :
 
         player1_value = int(input())
 
-        stack.append(player1_value)
+        stack.append('o')
 
         cur_list = dict[player1_value]
 
-        cur_list.append("x")
+        cur_list.append("o")
+
+        ret = win_val(dict)
 
     elif stack and stack.pop() == "o" :
 
         player2_value = int(input())
 
-        stack.append(player2_value)
+        stack.append('x')
 
         cur_list = dict[player2_value]
 
-        cur_list.append("o")
+        cur_list.append("x")
+
+        ret = win_val(dict)
     else :
 
         player1_value = int(input())
 
-        stack.append(player1_value)
+        stack.append('x')
 
         cur_list = dict[player1_value]
 
         cur_list.append("x")
 
-print_board(dict)
+        ret = win_val(dict)
+    if ret == 'x':
+        print('x wins')
+        break
+    elif ret == 'o':
+        print('o wins')
+        break
+    print_board(dict)

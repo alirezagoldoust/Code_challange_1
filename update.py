@@ -1,52 +1,29 @@
+eval = lambda x: 1 if x == 'x' else (-1 if x == 'o' else 0)
 
 
 def win_val(dic):
-    x_list = 0
-    o_list = 0
-
-    for i in range(len(1, 8)):
-        for j in range(len(1, 6)):
-            if dic[j] == "o":
-                o_list += 1
-            elif dic[i] == "x":
-                x_list += 1
-                o_list = 0
-            else:
-                pass
-
-    for j in range(7, 0, -1):
-        for i in range(1, 8):
-            if dic[i] == "o":
-                o_list += 1
-            elif dic[i] == 'x':
-                o_list = 0
-                x_list += 1
-            else:
-                pass
-
-    for i in range(1, 8):
-        for j in range(1, 6):
-            if (dic[i + 1]) and (dic[j + 1]) == 'o':
-                o_list += 1
-            elif (dic[i + 1]) and (dic[j + 1]) == 'x':
-                x_list += 1
-                o_list = 0
-            else:
-                pass
-
-    for i in range(1, 8):
-        for j in range(1, 6):
-            if (dic[i - 1]) and (dic[j - 1]) == 'o':
-                o_list += 1
-            elif (dic[i - 1]) and (dic[j - 1]) == 'x':
-                x_list += 1
-                o_list = 0
-            else:
-                pass
-
-    if x_list == 4:
-        return (print("x_ user is the winner"))
-    elif o_list == 4:
-        return (print(" O_ user is the winner"))
-    else:
-        return (print("game over "))
+    for i in range(1, 5):
+        for j in range(0, 6):
+            sums = [0, 0, 0, 0]
+            for k in range(0, 4):
+                try:
+                    sums[0] += eval(dic[i + k][j])
+                except:
+                    pass
+                try:
+                    sums[1] += eval(dic[i][j + k])
+                except:
+                    pass
+                try:
+                    sums[2] += eval(dic[i + k][j + k])
+                except:
+                    pass
+                try:
+                    sums[3] += eval(dic[i + k][j - k])
+                except:
+                    pass
+            if 4 in sums:
+                return 'x'
+            elif -4 in sums:
+                return 'o'
+    return ' '
