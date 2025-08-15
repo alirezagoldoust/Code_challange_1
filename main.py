@@ -1,3 +1,7 @@
+from display import *
+
+start()
+
 stack = []
 dict = {
     1 : [], 
@@ -40,3 +44,5 @@ while True :
         cur_list = dict[player1_value]
 
         cur_list.append("x")
+
+print_board(dict)
