@@ -1,2 +1,2 @@
-# This is the file of your project.
+# This is the main file of your project.
 # 🚀 Enjoy coding 
