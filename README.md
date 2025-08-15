@@ -9,9 +9,6 @@ This project is designed for learning purposes and serves as a great introductio
 - The first player to do so wins!
 - sample video: https://www.youtube.com/shorts/NxMvln4fiJs
 
-## 🛠️ Requirements  
-- Python 3.x  
-
 ## ▶️ Run the Game  
 Clone the repository and run:  
 ```sh
