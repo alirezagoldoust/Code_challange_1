@@ -21,6 +21,7 @@ def win_val(board_dict: dict) -> str :
                     sums[3] += piece_eval(board_dict[i + k][j - k])
                 except:
                     pass
+
             if 4 in sums:
                 return 'x'
             elif -4 in sums:

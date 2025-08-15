@@ -14,23 +14,23 @@ board_dict = {
 
 start()
 
-while True :
+while True:
 
-    if stack and stack.pop() == "x" :
+    if stack and stack.pop() == "x":
         player1_value = int(input())
         stack.append('o')
         cur_list = board_dict[player1_value]
         cur_list.append("o")
         ret = win_val(board_dict)
 
-    elif stack and stack.pop() == "o" :
+    elif stack and stack.pop() == "o":
         player2_value = int(input())
         stack.append('x')
         cur_list = board_dict[player2_value]
         cur_list.append("x")
         ret = win_val(board_dict)
 
-    else :
+    else:
         player1_value = int(input())
         stack.append('x')
         cur_list = board_dict[player1_value]
