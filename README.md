@@ -8,7 +8,10 @@ This project is designed for learning purposes and serves as a great introductio
 - The goal is to connect **four** pieces in a row (vertically, horizontally, or diagonally).  
 - The first player to do so wins!
 - sample video: https://www.youtube.com/shorts/NxMvln4fiJs
-- ![4InRow](https://i.ebayimg.com/images/g/SN4AAOSwoMxl32uD/s-l1200.jpg)
+<p align="center">
+  <img src="https://i.ebayimg.com/images/g/SN4AAOSwoMxl32uD/s-l1200.jpg" alt="Description" width="500">
+</p>
+
 
 ## ▶️ Run the Game  
 Clone the repository and run:  
