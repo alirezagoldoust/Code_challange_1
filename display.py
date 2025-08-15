@@ -17,9 +17,3 @@ if input_1 == "start":
     print("start ")
     player_1 = input("player1: enter your name:")
     player_2 = input("player2: enter your name:")
-
-
-
-
-
-

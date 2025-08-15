@@ -1,5 +1,3 @@
-user1 = input()
-user2 = input()
 stack = []
 dict = {
     1 : [], 
@@ -12,34 +10,33 @@ dict = {
 
 }
 
-
 while True :
 
     if stack and stack.pop() == "x" :
 
-        user1_value = int(input())
+        player1_value = int(input())
 
-        stack.append(user1_value)
+        stack.append(player1_value)
 
-        cur_list = dict[user1_value]
+        cur_list = dict[player1_value]
 
         cur_list.append("x")
 
     elif stack and stack.pop() == "o" :
 
-        user2_value = int(input())
+        player2_value = int(input())
 
-        stack.append(user2_value)
+        stack.append(player2_value)
 
-        cur_list = dict[user2_value]
+        cur_list = dict[player2_value]
 
         cur_list.append("o")
     else :
 
-        user1_value = int(input())
+        player1_value = int(input())
 
-        stack.append(user1_value)
+        stack.append(player1_value)
 
-        cur_list = dict[user1_value]
+        cur_list = dict[player1_value]
 
         cur_list.append("x")
